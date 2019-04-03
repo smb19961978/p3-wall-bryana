@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    padding: 2%;
+}
+
+.button1 {
+    background-color:#3fa9f5;
+    padding: 10%;
+    width: 50%;
+    
+}
+
+.button2{
+    background-color: #7ac943;
+    padding: 10%;
+    width:50%;
+}
+
+.button3{
+    background-color:#ff931e;
+    width: 50%;
+    padding: 10%;
+}
+
+.button4{
+    background-color:#ff1d25;
+    width: 50%;
+    padding: 10%;
+}
+
+button{
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+div {
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+p{
+    text-align: center;
+    font-size: 2em;
+    padding: 2%;
+    color: #7ac943
+}
+
+span {
+    margin: auto;
+}
