@@ -1,5 +1,5 @@
 
-//blue box//
+//color box//
 
 const myBoxes = document.getElementsByClassName('button1');
 
@@ -21,15 +21,9 @@ function loopThrough(){
 };
 
 
-for (let i = 0; i < myBoxes.length; i++){
-    
-    myBoxes[i].addEventListener("click", loopThrough);
 
-    myBoxes[i].addEventListener("click", changeLayer);
 
-};
-
-//take away buttons//
+//take away color buttons//
 
 
 function changeLayer (){
@@ -49,96 +43,31 @@ function changeLayer (){
     };
 
 
+//take away number buttons//
 
+function changeLayerNum (){
+    const swapLayersNum = () => {
 
-
-/*
-//green box//
-
-const myBoxesGreen = document.getElementsByClassName('button2');
-
-
-function loopThrough(){
-   
-    const changeColor = () => this.classList.toggle("red");
-    
-    changeColor();
-
-   
-   for (let i = 0; i< this.textContent.length * 2 ; i++){
-       setTimeout(changeColor, i * 1000);
-       
-       
-   } this.textContent.length;
-    
-    
+        var layerTwo = document.getElementById("layerTwo");
+        layerTwo.classList.add("hide");
+        
+        var span = document.getElementById("fortune");
+        span.classList.remove("hide");
 };
-
-
-for (let i = 0; i < myBoxesGreen.length; i++){
     
-    myBoxesGreen[i].addEventListener("click", loopThrough);
+    
+
+  setTimeout(swapLayersNum, this.textContent.length * 4000);
+        
+    };
+
+
+for (let i = 0; i < myBoxes.length; i++){
+    
+    myBoxes[i].addEventListener("click", loopThrough);
+
+    myBoxes[i].addEventListener("click", changeLayer);
+    
+    myBoxes[i].addEventListener("click", changeLayerNum);
+
 };
-
-
-
-
-
-//orange box//
-
-const myBoxesOr = document.getElementsByClassName('button3');
-
-
-function loopThrough(){
-   
-    const changeColor = () => this.classList.toggle("red");
-    
-    changeColor();
-
-   
-   for (let i = 0; i< this.textContent.length * 2 ; i++){
-       setTimeout(changeColor, i * 1000);
-       
-       
-   } this.textContent.length;
-    
-    
-};
-
-
-for (let i = 0; i < myBoxesOr.length; i++){
-    
-    myBoxesOr[i].addEventListener("click", loopThrough);
-};
-
-//red box//
-
-
-const myBoxesRed = document.getElementsByClassName('button4');
-
-
-function loopThrough(){
-   
-    const changeColor = () => this.classList.toggle("red");
-    
-    changeColor();
-
-   
-   for (let i = 0; i< this.textContent.length * 2 ; i++){
-       setTimeout(changeColor, i * 1000);
-       
-       
-   } this.textContent.length;
-    
-    
-};
-
-
-for (let i = 0; i < myBoxesRed.length; i++){
-    
-    myBoxesRed[i].addEventListener("click", loopThrough);
-};
-
-
-
-*/

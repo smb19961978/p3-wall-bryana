@@ -18,26 +18,26 @@ h1{
     color: #c1272d;
 }
 
-.button1 {
+#button1 {
     background-color:#3fa9f5;
     padding: 10%;
     width: 50%;
     
 }
 
-.button2{
+#button2{
     background-color: #7ac943;
     padding: 10%;
     width:50%;
 }
 
-.button3{
+#button3{
     background-color:#ff931e;
     width: 50%;
     padding: 10%;
 }
 
-.button4{
+#button4{
     background-color:#ff1d25;
     width: 50%;
     padding: 10%;
@@ -46,11 +46,20 @@ h1{
 button{
     font-size: 3em;
     text-align: center;
+    width: 50%;
+    padding: 10%;
 }
 
 
+.colors{
+    display: flex;
+}
 
-div {
+.colors2{
+    display: flex;
+}
+
+.numbers{
     display: flex;
 }
 
@@ -70,6 +79,6 @@ span {
 }
 
 
-.red{
-    background-color: white;
+.red {
+    background-color: white !important;
 }
