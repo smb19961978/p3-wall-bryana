@@ -12,7 +12,7 @@ function loopThrough(){
 
    
    for (let i = 0; i< this.textContent.length * 2 ; i++){
-       setTimeout(changeColor, i * 1000);
+       setTimeout(changeColor, i * 500);
        
    
        
@@ -38,7 +38,7 @@ function changeLayer (){
     
     
 
-  setTimeout(swapLayers, this.textContent.length * 2000);
+  setTimeout(swapLayers, this.textContent.length * 1000);
         
     };
 
@@ -57,7 +57,7 @@ function changeLayerNum (){
     
     
 
-  setTimeout(swapLayersNum, this.textContent.length * 4000);
+  setTimeout(swapLayersNum, this.textContent.length * 3000);
         
     };
 

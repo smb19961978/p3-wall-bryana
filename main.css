@@ -43,6 +43,32 @@ h1{
     padding: 10%;
 }
 
+#number1 {
+    background-color:#3fa9f5;
+    padding: 10%;
+    width: 50%;
+    
+}
+
+#number2{
+    background-color: #7ac943;
+    padding: 10%;
+    width:50%;
+}
+
+#number3{
+    background-color:#ff931e;
+    width: 50%;
+    padding: 10%;
+}
+
+#number4{
+    background-color:#ff1d25;
+    width: 50%;
+    padding: 10%;
+}
+
+
 button{
     font-size: 3em;
     text-align: center;
@@ -74,8 +100,13 @@ p{
     
 }
 
-span {
+span p{
     margin: auto;
+    background-color:#ff7bac ;
+    width:50%;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 15%;
 }
 
 
