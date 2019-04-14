@@ -59,7 +59,7 @@ function changeLayerNum (){
         
         var fortuneItems = ["Life is like a box of Chocolates", "A body makes his own luck, be it good or bad", "Change yourself and fortune will change", "Good things come when you least expect them", "Great actions are not always true sons of great and mighty resolutions", "It is possible to have too much of a good thing", "Lightning never strikes the same place twice", "May the wind be always at your back"];
         
-        fortuneItems.sort(function(a,b){return 0.5 - Math.random()});
+        fortuneItems.sort(function(a){return 0.5 - Math.random()});
         
         var textNode = document.createTextNode(fortuneItems[0]);
         
@@ -78,36 +78,6 @@ function changeLayerNum (){
         
     };
 
-/*
-//fortunes//
-
-function showFortune (){
-    const fortuneLayer = () => {
-        
-        
-        
-        var ourRandomFortuneItem = document.createElement("p");
-
-        var fortuneItemWrapper = document.getElementById("fortune");
-        fortuneItemWrapper.appendChild(ourRandomFortuneItem);
-
-        var placeholderText = document.createTextNode("");
-        ourRandomFortuneItem.appendChild(placeholderText);
-
-        var fortuneItems = ["Life is like a box of Chocolates", "A body makes his own luck, be it good or bad", "Change yourself and fortune will change", "Good things come when you least expect them", "Great actions are not always true sons of great and mighty resolutions", "It is possible to have too much of a good thing", "Lightning never strikes the same place twice", "May the wind be always at your back"];
-
-        var myFunction = function(){
-        fortuneItems.sort(function(a,b){return 0.5 - Math.random()});
-
-        var ourFortuneItemsFiller = document.createTextNode(fortuneItems[0]);
-        ourRandomFortuneItem.appendChild(ourFortuneItemsFiller);
-        
-    };
-        
-          setTimeout(fortuneLayer, this * 4000);
-    
-};
-*/
 
 
 for (let i = 0; i < myBoxes.length; i++){

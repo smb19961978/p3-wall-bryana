@@ -100,16 +100,18 @@ p{
     
 }
 
-span p{
+
+.red {
+    background-color: white !important;
+}
+
+#fortune {
+ 
     margin: auto;
     background-color:#ff7bac ;
     width:50%;
     font-weight: bold;
     font-size: 2em;
     margin-top: 15%;
-}
-
-
-.red {
-    background-color: white !important;
+    padding: 2%;
 }
