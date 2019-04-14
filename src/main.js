@@ -52,20 +52,6 @@ function changeLayerNum (){
         layerTwo.classList.add("hide");
         
         
-        //randomized fortunes//
-        var addPara= document.createElement("p")
-        var randomize = document.getElementById("fortune");
-        
-        
-        var fortuneItems = ["Life is like a box of Chocolates", "A body makes his own luck, be it good or bad", "Change yourself and fortune will change", "Good things come when you least expect them", "Great actions are not always true sons of great and mighty resolutions", "It is possible to have too much of a good thing", "Lightning never strikes the same place twice", "May the wind be always at your back"];
-        
-        fortuneItems.sort(function(a){return 0.5 - Math.random()});
-        
-        var textNode = document.createTextNode(fortuneItems[0]);
-        
-        randomize.appendChild(textNode);
-        
-        
         
         
         var span = document.getElementById("fortune");
@@ -79,6 +65,26 @@ function changeLayerNum (){
     };
 
 
+function randomizeFortune(){
+
+ //randomized fortunes//
+       // var addPara= document.createElement("p")
+        var randomize = document.getElementById("fortune");
+        
+        
+        var fortuneItems = ["Life is like a box of Chocolates", "A body makes his own luck, be it good or bad", "Change yourself and fortune will change", "Good things come when you least expect them", "Great actions are not always true sons of great and mighty resolutions", "It is possible to have too much of a good thing", "Lightning never strikes the same place twice", "May the wind be always at your back"];
+        
+        fortuneItems.sort(function(a,b){return 0.5 - Math.random()});
+        
+        var textNode = document.createTextNode(fortuneItems[0]);
+        
+        randomize.appendChild(textNode);
+    
+    };
+
+setTimeout(randomizeFortune, this * 3500);
+
+
 
 for (let i = 0; i < myBoxes.length; i++){
     
@@ -88,7 +94,7 @@ for (let i = 0; i < myBoxes.length; i++){
     
     myBoxes[i].addEventListener("click", changeLayerNum);
     
-   // myBoxes[i].addEventListener("click", showFortune);
+   
 
 };
 
